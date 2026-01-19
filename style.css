@@ -322,12 +322,12 @@ font-size: 16px;
 line-height: 24px;
 text-align: left;
 margin-top: 16px;
+opacity: 0.6;
 }
 
 
 @media (max-width: 576px) {
 
-    /* prevent horizontal overflow */
     body {
         overflow-x: hidden;
     }
@@ -339,7 +339,7 @@ line-height: 39px;
 text-align: center;
     }
     
-    /* reduce large horizontal paddings */
+
     .header-body,
     .podcast-items,
     .grid-body {
@@ -363,4 +363,83 @@ text-align: center;
             "grid05";
     }
 
+    .card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+    }
+
+ .episode-title h1.ftep {
+        font-size: 26px;
+        line-height: 32px;
+        white-space: nowrap;
+    }
+
+}
+
+.featured-section{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 120;
+padding: 120px 200px 120px 200px;
+background: rgba(26, 11, 46, 1);
+}
+
+.episode-title h1{
+font-size: 48px;
+font-style: bold;
+line-height: 58px;
+text-align: center;
+text-transform: capitalize;
+color: white;
+}
+
+.ep-cards{
+    width: 380px;
+    height: 440px;
+    border-radius: 16px;
+    background-color: #250D44;
+}
+
+.vid iframe{
+    width: 380px;
+    height: 214px;
+    border-radius: 16px 16px 0 0;
+}
+.vid-text{
+    padding: 24px;
+}
+.vid-text h1{
+font-style: Bold;
+font-size: 24px;
+line-height: 29px;
+text-align: left;
+color: #FFFFFF;
+}
+
+.vid-text p{
+margin-top: 12px;
+margin-bottom: 12px;
+font-size: 16px;
+line-height: 24px;
+text-align: left;
+color: #FFFFFF;
+opacity: 0.6;
+}
+
+.vid-text span{
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+color: #00FF88;
+}
+
+.card-body{
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
 }
