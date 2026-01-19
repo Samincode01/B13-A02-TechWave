@@ -65,7 +65,49 @@ transform: scale(1);
 transition: transform 0.3s ease;
 }
 
+.btn02{
+color:#FFFFFF;
+width: 201px;
+height: 44px;
+font-size: 16px;
+font-weight: 600;
+line-height: 19px;
+text-align: left;
+align-items: center;
+border-radius: 10000px;
+padding: 12px 20px 12px 20px;
+background: linear-gradient(to right, #F7E93F 0%,#FB09B4 51%,#9100F8 100%);
+transform: scale(1);
+transition: transform 0.3s ease;
+}
+
+.btn03{
+    width: 147px;
+height: 44px;
+font-size: 16px;
+font-weight: 600;
+line-height: 19px;
+text-align: left;
+padding: 12px 20px 12px 20px;
+box-sizing: border-box;
+border: 1px solid #00FF88;
+background-color: transparent;
+color: #00FF88;
+border-radius: 10000px;
+transform: scale(1);
+transition: transform 0.3s ease-in;
+}
 .btn01:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.btn02:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.btn03:hover{
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -139,10 +181,69 @@ text-align: center;
 margin-top: 8px;
 }
 
-.button-area button{
+.button-area{
+    display: flex;
     position: absolute;
-    transform: translate(-50%, -50%) translateX(110px) translateY(342px);
+    transform: translate(-50%, -50%) translateX(-10px) translateY(250px);
     top: 50%;
     left: 50%;
     z-index: 4;
+    gap: 8px;
+}
+
+.podcast-about{
+    text-align: center;
+}
+
+.podcast-section{
+    background-color: #1A0B2E;
+}
+
+.podcast-items{
+    padding: 50px 200px 120px 200px;
+}
+.podcast-about h1{
+font-style: Bold;
+font-size: 48px;
+line-height: 58px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.podcast-about p{
+    margin-top: 16px;
+text-align: center;
+color: #FFFFFF;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+}
+
+.podcast-about hr{
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: #FFFFFF;
+    opacity: 0.1;
+}
+.podcast-cards{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.card01 h1{
+font-size: 48px;
+font-weight: 900;
+line-height: 58px;
+text-align: center;
+color: #00FF88;
+}
+
+.card01 p{
+margin-top: 16px;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-align: center;
+color: #FFFFFF;
 }
