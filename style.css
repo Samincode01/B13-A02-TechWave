@@ -67,6 +67,7 @@ transition: transform 0.3s ease;
 
 .btn01:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .banner {
@@ -136,4 +137,12 @@ font-weight: 400;
 line-height: 19px;
 text-align: center;
 margin-top: 8px;
+}
+
+.button-area button{
+    position: absolute;
+    transform: translate(-50%, -50%) translateX(110px) translateY(342px);
+    top: 50%;
+    left: 50%;
+    z-index: 4;
 }
