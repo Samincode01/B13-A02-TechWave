@@ -247,3 +247,120 @@ line-height: 20px;
 text-align: center;
 color: #FFFFFF;
 }
+
+.grid-body{
+    background-color: rgba(35, 14, 61, 1);
+    align-items: center;
+    padding: 120px 200px 120px 200px;
+
+}
+.grid-container>*{
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+}
+
+.grid01{
+    grid-area: grid01;
+}
+
+.grid02{
+    grid-area: grid02;
+}
+
+.grid03{
+    grid-area: grid03;
+}
+
+.grid04{
+    grid-area: grid04;
+}
+
+.grid05{
+    grid-area: grid05;
+}
+
+.grid-container{
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "grid01 grid02 grid02"
+                        "grid01 grid03 grid03"
+                        "grid04 grid04 grid05"
+
+}
+
+.grid-title h1{
+color: white;
+font-style: Bold;
+font-size: 48px;
+font-weight: 700;
+line-height: 58px;
+text-align: center;
+margin-bottom: 30px;
+}
+
+.grid01{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.grid-container h1{
+color: white;
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+text-align: left;
+margin-top: 16px;
+}
+
+.grid-container p{
+color: white;
+font-size: 16px;
+line-height: 24px;
+text-align: left;
+margin-top: 16px;
+}
+
+
+@media (max-width: 576px) {
+
+    /* prevent horizontal overflow */
+    body {
+        overflow-x: hidden;
+    }
+.grid-title h1{
+    margin-top: -60px;
+font-style: Bold;
+font-size: 32px;
+line-height: 39px;
+text-align: center;
+    }
+    
+    /* reduce large horizontal paddings */
+    .header-body,
+    .podcast-items,
+    .grid-body {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* banner height adapts */
+    .banner {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    /* grid → 1 column, 5 rows */
+    .grid-container {
+        grid-template-areas:
+            "grid01"
+            "grid02"
+            "grid03"
+            "grid04"
+            "grid05";
+    }
+
+}
