@@ -574,11 +574,14 @@ text-align: center;
             "grid05";
     }
 
+      .featured-section {
+    padding: 40px 16px;
+    }
     .card-body{
-    display: flex;
+     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-top: 40px;
+    align-items: center;
+    gap: 24px;
     }
 
  .episode-title h1.ftep {
@@ -590,18 +593,17 @@ text-align: center;
     width: 100%;
 }
 
- .ep-cards {
-        width: 100%;
-        max-width: 380px;
-        height: auto;
-        margin: 0 auto;
-    }
+   .ep-cards {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
 
     .vid iframe {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16/9;
-    }
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
 
 .name h1{
 font-size: 32px;
